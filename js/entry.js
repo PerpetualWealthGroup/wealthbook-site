@@ -15,12 +15,15 @@
         { label: 'Held by', fixed: 'The Alderton Family Trust' },
         { label: 'Note', draft: 'Marcus looking at the slipway', settled: 'Marcus Reid looking at the slipway' } ],
       footer: ['', 'written by you', 'settled by Land Registry · your estimate kept underneath', '"Marcus" became a contact · note re-hung under Marcus Reid, surveyor'] },
-    { chapter: 'Chapter 5 · Boats', page: 'p. 67', title: 'Kittiwake · Oyster 56', alt: 'Watercolour · Kittiwake under sail',
+    // Ian's own boat (12 Sep 2026): Lady Anne, a Botnia Targa 46, kept
+    // at Ocean Village, owned by the family. The figures stay the
+    // Alderton book's fiction; the boat and the berth are real.
+    { chapter: 'Chapter 5 · Boats', page: 'p. 67', title: 'Lady Anne · Botnia Targa 46', image: 'images/lady-anne.webp', alt: 'Watercolour · Lady Anne at Ocean Village',
       rows: [
         { label: 'Value', draft: '£620,000', settled: '£585,000', figure: true },
         { label: 'Source', draft: 'What you paid, 2021', settled: 'Broker valuation · Berthon, April', badge: true },
-        { label: 'Berth', fixed: 'Dart Marina · C14' },
-        { label: 'Next', draft: 'Survey before the season', settled: 'Survey · Marcus Reid · Thu 14 May' } ],
+        { label: 'Berth', fixed: 'Ocean Village Marina · Southampton' },
+        { label: 'Held by', fixed: 'The family' } ],
       footer: ['', 'written by you', 'broker valuation filed · purchase price kept underneath', 'survey booked · Charlie added it to the diary and the boat'] },
     { chapter: 'Chapter 3 · Property', page: 'p. 38', title: 'Coldharbour Rectory', alt: 'Watercolour · the Rectory from the lane',
       rows: [
