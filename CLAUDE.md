@@ -25,6 +25,15 @@ hand: Cormorant Garamond for display, Instrument Sans for text, the
 paper `#fcfbf9`, the ink `#1a1815`, two radii and no more. Change a
 token in the app first; this file follows.
 
+## The cache
+
+GitHub Pages sends every file with `max-age=600`, and a browser keeps it
+for those ten minutes. So a push that changes `css/site.css` or
+`js/entry.js` must also bump the `?v=` on their links in `index.html`,
+or the reader gets the new page in the old clothes (12 Sep 2026: the
+hero went live naked on Ian's screen). Claude bumps it on every push
+that touches them; never publish a stylesheet change without it.
+
 ## Files
 
 - `index.html` — the home page.
