@@ -10,9 +10,16 @@ same way, and this is its twin).
 - Ian never edits this repo by hand. He lands each page's look in Claude
   Design; the finished page comes to the Claude Code session and Claude
   puts it here in the house's real tokens.
-- **"Ship it" here means push to `main`**, because `main` is live. There
-  is no staging; the sketch is the design canvas, the repo is the truth.
-  Nothing else moves anything.
+- **The website has a staging twin** (12 Sep 2026: "when we go live with
+  this people will see it straight away"):
+  `PerpetualWealthGroup/wealthbook-site-staging`, served at
+  https://perpetualwealthgroup.github.io/wealthbook-site-staging/. The
+  two words mean here what they mean for the app: **"Ship it"** = push
+  the page to the staging repo's `main`, reply "on staging"; **"Merge
+  it"** = push the same files to THIS repo's `main`, which is
+  wealthbook.co.uk, reply "live at hh:mm BST". Nothing else moves
+  anything. The artifact sketch is where ideas are argued about before
+  either.
 - The app repo is `PerpetualWealthGroup/wealthbook`; this one is
   `PerpetualWealthGroup/wealthbook-site`. Every session starts from the
   group, never from an alias.
