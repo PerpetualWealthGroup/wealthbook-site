@@ -1,0 +1,107 @@
+/* wealthbook-site — the house's tokens, worn by the front website.
+   Copied from the app's apps/web/app/globals.css :root so the site and
+   the book are one hand. Change the app first; this follows. */
+:root {
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-text: 'Instrument Sans', system-ui, sans-serif;
+  --paper: #fcfbf9;
+  --panel: #ffffff;
+  --ink: #1a1815;
+  --muted: #8a8375;
+  --soft: #6b6459;
+  --hairline: #e8e4dc;
+  --hairline-strong: #d8d2c6;
+  --wash: #f5f2ec;
+  --faint: #b0a893;
+  /* The corner law: exactly two radii in the whole product. */
+  --corner: 2px;
+  --corner-soft: 8px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The page is one column of parchment, the book's own measure. */
+.page {
+  width: min(720px, 100% - 48px);
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 40px 0 0;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 96px 0;
+}
+
+/* The kicker: small capitals in the muted ink, as on every page of the book. */
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(40px, 7vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  max-width: 14ch;
+}
+
+.lede {
+  font-size: 18px;
+  color: var(--soft);
+  max-width: 44ch;
+  margin: 0;
+}
+
+footer {
+  border-top: 1px solid var(--hairline);
+  padding: 20px 0 32px;
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  header { padding-top: 28px; }
+  main { padding: 64px 0; }
+  .lede { font-size: 17px; }
+}
